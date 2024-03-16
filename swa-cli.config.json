@@ -1,0 +1,15 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "blog": {
+      "appLocation": ".",
+      "outputLocation": "build",
+      "apiVersion": "18",
+      "appBuildCommand": "npm run build",
+      "run": "npm run dev",
+      "appDevserverUrl": "http://localhost:5173",
+      "appName": "blog",
+      "resourceGroup": "blog-rg"
+    }
+  }
+}

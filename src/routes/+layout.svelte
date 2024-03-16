@@ -47,7 +47,7 @@
 					</Menubar.SubContent>
 				</Menubar.Sub>
 				<Menubar.Item target="_blank" href={gitref('whisper-transcribe')}>
-					<FileVideo2/>
+					<FileVideo2 />
 					&nbsp; Whisper transcription
 				</Menubar.Item>
 				<Menubar.Item target="_blank" href={gitref('jason-voice-ai')}>

@@ -3,6 +3,7 @@
 	import TextEffect from '$lib/components/textEffect.svelte';
 	import type { Writable } from 'svelte/store';
 	import { writable } from 'svelte/store';
+	import profile from './user.jpeg?enhanced';
 
 	const nameLabel: Writable<boolean> = writable(false);
 
@@ -20,7 +21,7 @@
 <main class="mx-5 mb-5 grid gap-10">
 	<div class="flex w-full justify-center max-md:flex-col">
 		<div class="items-center self-center md:w-1/4">
-			<enhanced:img src="./user.jpeg" alt="personImage" class="max-md:rounded-xl md:rounded-l-xl" />
+			<enhanced:img src={profile} alt="personImage" class="max-md:rounded-xl md:rounded-l-xl" />
 		</div>
 		<div>
 			<TextEffect class="p-6 text-center font-medium" text="Dariel Fierro" mountVar={nameLabel} />
